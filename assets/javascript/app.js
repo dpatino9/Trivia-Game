@@ -78,7 +78,7 @@ var q7 = {
  
   
 
- // variables list
+ // variables list (Global)
   var questions = [];
 
   var num = 0;
@@ -87,7 +87,7 @@ var q7 = {
   var numberWrong = 0;
   var numTimeout = 0;
 
-   // Timer
+   // Timer Function for Each Question
   function nextquestion() {
     time = 20;
     counter = setInterval(increment, 1000);
@@ -100,7 +100,7 @@ var q7 = {
    
   };
 
-
+  // Increment Function for Timer Countdown
   function increment() {
     time--
     $(".timer").html("<h2>Time Remaining: " + time + "</h2>")
@@ -115,7 +115,7 @@ var q7 = {
     };
   };
 
-
+  // Clear Interval Stop Counter 
   function stop() {
     clearInterval(counter);
     num++;
@@ -127,7 +127,7 @@ var q7 = {
     };
   };
 
-
+  // Message on HTML after Correct answer is choosen
   function correctanswer() {
     $(".question").html("<p>You are Correct!</p>");
   $('<img/>')
@@ -135,6 +135,7 @@ var q7 = {
   .appendTo('.question');
   };
 
+  // Message on HTML after Wrong answer is choosen
   function wronganswer() {
     numberWrong++;
     $(".question").html("<p>WRONG <br> The correct answer was: " + questions[num].answer + "</p>");
@@ -146,13 +147,14 @@ var q7 = {
   .appendTo('.question');
   };
 
-
+  // [TimeOut] Message when time runs out!!
   function timeout() {
     numTimeout++;
     $(".question").html("<p>Time's up! <br> The correct answer was: " + questions[num].answer + "</p>");
     
   };
 
+  // [EndGame] Message shown with added HTML for tally of number wrong, number correct, number questions not answered!
   function endgame() {
     $(".question").html("<h2>You got " + numberCorrect + " answers correct!</h2>"
        + "<h2>You got " + numberWrong + " Wrong</h2>" + "<h2>You didn't answer "  + numTimeout +  " questions</h2>");
@@ -172,6 +174,7 @@ var q7 = {
     audio.play();
   }) 
 
+  // Click Functions for choosen [Correct] and [Wrong] answers choosen
   $(".choice").on("click", function() {
 
       if($(this).text() == questions[num].answer) {
