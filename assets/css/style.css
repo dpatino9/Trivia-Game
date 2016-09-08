@@ -1,5 +1,5 @@
 /*font-family [local]: 'GameOfThrones';*/
-@font-face { font-family: GameOfThrones; src: url('../font/GameOfThrones.ttf'); }
+@font-face { font-family: GameOfThrones; src: url('../font/GameofThrones.ttf'); }
 
 body{
 	/*background-image: <!-- Using Backstrecth JQuery Plug-in for Background image -->*/
