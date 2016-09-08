@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Added	a link to Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+	<!--Added a link to Asset Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Game of Thrones Trivia</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 col-md-offset-3 text-center">
+        
+
+          <button class="startButton">Press Start</button>
+
+          <div class="score"></div>
+          <div class="timer"></div>
+          <br>
+          <!-- Question -->
+          <div class="question"></div>
+          <br>
+          <div class="row">
+            <div class="col-md-6 col-md-3"></div>
+
+          </div>
+
+          <br>
+          <!-- Answer choices -->
+          <div class="choice ans1"></div>
+          <br>
+          <div class="choice ans2"></div>
+          <br>
+          <div class="choice ans3"></div>
+          <br>
+          <div class="choice ans4"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"> </script>
+<!-- Using Backstrecth JQuery Plug-in for Background image -->
+<script type="text/javascript" src="assets/javascript/backstretch.js">$.backstretch("assets/images/GotThrone.jpg");</script>
+<script>
+  $.backstretch(["assets/images/GotThrone.jpg"]);
+</script>
+</body>
+</html>

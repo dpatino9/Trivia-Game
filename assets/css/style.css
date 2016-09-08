@@ -1,0 +1,52 @@
+/*font-family [local]: 'GameOfThrones';*/
+@font-face { font-family: GameOfThrones; src: url('../font/GameOfThrones.ttf'); }
+
+body{
+	/*background-image: <!-- Using Backstrecth JQuery Plug-in for Background image -->*/
+
+}
+h1{
+  font-family: GameOfThrones;
+  color: #c9510a;
+  text-shadow: -2px 2px 5px #f9ef57;
+}
+h2{
+  font-family: monospace;
+  color: #f9ef57;
+  text-shadow: -2px 2px 5px #c9510a;
+}
+.intro{
+  color: ;
+}
+.question img{
+  height: 200px;
+  width: auto;
+}
+.container{
+  
+}
+button {
+  font-size: 25px;
+  margin-top: 25px;
+  color: #b23821;
+  text-align: center;
+  background-color: #262626;
+  width:175px;
+}
+.score{
+  color: white;
+}
+.timer{
+  color: red;
+
+}
+.question{
+  color: white ;
+  font-size: 20px;
+  font-family: GameOfThrones;
+}
+.choice{
+  color: #b23821;
+  font-size: 20px;
+  background-color: #262626;
+}
